@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="file.css">
+    <script src="file.js" defer></script>
+</head>
+<body onload="output()">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th><input id="name" readonly></th>
+            <th><input type="button" value="Delete" onclick="deleteData('name')"></th>
+            <th>
+                <a href="#name">
+                    <input type="button" value="update" onclick="updateData('name')">
+                </a>
+            </th>
+        </tr>
+        <tr>
+            <th>Phno</th>
+            <th><input type="tel" id="phno" readonly></th>
+            <th> <input type="button" value="Delete" onclick="deleteData('Phno')"></th>
+            <th>
+            <a href="#phno">
+                <input type="button" value="update" onclick="updateData('phno')">
+            </a>
+            </th>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <th><input type="tel" id="email" readonly></th>
+            <th> <input type="button" value="Delete" onclick="deleteData('Email')"></th>
+            <th>
+                <a href="#email">
+                    <input type="button" value="update" onclick="updateData('email')">
+                </a>
+            </th>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <th><textarea id="add" readonly></textarea></th>
+            <th> <input type="button" value="Delete" onclick="deleteData('Address')"></th>
+           <th>
+            <a href="#add">
+                <input type="button" value="update" onclick="updateData('add')">
+            </a>
+           </th>
+        </tr>
+        <tr>
+            <th colspan="2"><input type="button" value="Submit" onclick="updateDataToStorage()"></th>
+            <th colspan="2"> <input type="button" value="Clear" onclick="clearData()"></th>
+        </tr>
+    </table>
+</body>
+</html>
